@@ -28,7 +28,8 @@ jobs:
       with:
         host: 13.233.65.135 
         username: revanth 
-        key: ${{ secrets.HOST_PUB_KEY }} # ${{ secrets.HOST_GIT_PRIVATE_KEY }}
+        key: ${{ secrets.HOST_GIT_PRIVATE_KEY }}
+        key_path: /home/revanth/.ssh/gitkeys/gitkey
         port: 22
         script: |
           echo this is working
