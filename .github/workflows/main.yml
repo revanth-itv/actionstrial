@@ -26,8 +26,9 @@ jobs:
     - name: Run a script to copy the files of the repository
       uses: appleboy/ssh-action@master
       with:
-        host: 13.233.65.135
+        host: ec2-13-233-65-135.ap-south-1.compute.amazonaws.com
         username: ubuntu
+        port: 22 
         key: ${{ secrets.HOST_GIT_PRIVATE_KEY }}
         script: |
           echo this is working
