@@ -28,7 +28,7 @@ jobs:
       with:
         host: 172.31.38.239
         username: ubuntu
-        key: {{ $secret.HOST_GIT_PRIVATE_KEY }}
+        key: ${{ secret.HOST_GIT_PRIVATE_KEY }}
         script: |
           echo this is working
       
