@@ -26,10 +26,9 @@ jobs:
     - name: Run a script to copy the files of the repository
       uses: appleboy/ssh-action@master
       with:
-        host: 172.31.38.239 
-        username: ubuntu
-        port: 22 
-        password: ubuntu
+        host: 13.233.65.135 
+        username: revanth 
+        password: revanth
         #key: ${{ secrets.HOST_GIT_PRIVATE_KEY }}
         script: |
           echo this is working
