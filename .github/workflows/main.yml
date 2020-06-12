@@ -29,6 +29,7 @@ jobs:
         host: 13.233.65.135 
         username: revanth 
         key: ${{ secrets.HOST_GIT_PRIVATE_KEY }}
+        timeout: 40
         debug:
         port: 22
         script: |
